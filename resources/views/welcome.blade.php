@@ -863,7 +863,9 @@
 
             <div class="mt-16">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                    <h1>{{ url('/') }}</h1>
+                    <h1 class="text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
+                        {{ url('/') }}
+                    </h1>
                 </div>
             </div>
 
