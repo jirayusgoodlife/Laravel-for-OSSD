@@ -1,5 +1,5 @@
 # Use Alpine Linux as the base image for PHP
-FROM php:8.2.15-fpm-alpine
+FROM php:8.2-fpm-alpine
 
 # Install additional dependencies
 RUN apk update && \

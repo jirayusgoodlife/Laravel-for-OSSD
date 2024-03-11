@@ -1,0 +1,4 @@
+Dockerfile.php
+Dockerfile.apache
+docker-compose.yml
+server_data/*
