@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/test', function () {
+    echo "<h1>test</h1><a href='".url('/')."'>HOME ".url('/')."</a>";
+});
