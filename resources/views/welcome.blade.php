@@ -868,7 +868,7 @@
                     </h1>
                 </div>
             </div>
-
+            <h1><a href="{{ url('/test') }}">goto TEST</a></h1>
             <div class="flex justify-center mt-16 px-0 sm:items-center sm:justify-between">
                 <div class="text-center text-sm sm:text-left">
                     &nbsp;
