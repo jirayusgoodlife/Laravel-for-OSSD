@@ -1,9 +1,28 @@
 services:
+    php:
+        build:
+            context: .
+            dockerfile: Dockerfile.php
+        container_name: php
+        volumes:
+            - .:/var/www/html
+        depends_on:
+            - database
+    web:
+        build:
+            context: .
+            dockerfile: Dockerfile.apache
+        ports:
+            - "80:80"
+        volumes:
+            - .:/var/www/html
+        depends_on:
+            - php
     database:
         image: mysql:8.0
         container_name: database
         volumes:
-            - ./server/mysql:/var/lib/mysql
+            - ./server_data:/var/lib/mysql
         environment:
             - "MYSQL_DATABASE=app"
             - "MYSQL_USER=app"
